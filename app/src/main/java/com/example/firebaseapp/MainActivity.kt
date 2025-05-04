@@ -93,7 +93,8 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
             } catch (e: ApiException) {
-                Toast.makeText(this, "Error en login de Google", Toast.LENGTH_SHORT).show()
+                val statusCode = e.statusCode
+                Toast.makeText(this, "Error en login de Google: $statusCode ", Toast.LENGTH_SHORT).show()
             }
         }
     }

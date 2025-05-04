@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="200dp"
         android:layout_gravity="center_horizontal"
         />
 
@@ -20,7 +20,7 @@
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="550dp"
-        android:backgroundTint="#6C6871"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#98b50b"
         android:text="Cerrar sesión" />
 </LinearLayout>
