@@ -8,6 +8,10 @@
 - **Marvin René Rivera García** (RG233263)
 - **Luis Angel Abarca Flores** (AF231735)
 
+# Link de investigación y video
+https://drive.google.com/drive/folders/1tCHuUEsU5qsQ8bum7W9U3ofK3h_Dy3Y5?usp=sharing
+
+
 ## Descripción del Proyecto
 
 Este proyecto es una aplicación desarrollada en **Android Studio**  utilizando **Firebase**. Utilizando la autenticacion por correo/contraseña y Google de firebase.
