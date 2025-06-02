@@ -17,6 +17,27 @@
         />
 
     <Button
+        android:id="@+id/crearEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Crear Evento" />
+
+    <Button
+        android:id="@+id/futurosEventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Futuros Eventos" />
+
+    <Button
+        android:id="@+id/viejosEventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Eventos anteriores" />
+
+    <Button
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
