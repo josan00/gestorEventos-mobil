@@ -3,9 +3,8 @@
     android:layout_height="match_parent"
     android:background="#B9D3DB"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:rotationX="0"
-    android:rotationY="0">
+    android:padding="16dp">
+
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -13,29 +12,23 @@
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:layout_marginTop="200dp"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/crearEvento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FFFFFF"
         android:text="Crear Evento" />
 
     <Button
-        android:id="@+id/futurosEventos"
+        android:id="@+id/verEventos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Futuros Eventos" />
-
-    <Button
-        android:id="@+id/viejosEventos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:text="Eventos anteriores" />
+        android:text="Ver Eventos" />
 
     <Button
         android:id="@+id/logoutButton"

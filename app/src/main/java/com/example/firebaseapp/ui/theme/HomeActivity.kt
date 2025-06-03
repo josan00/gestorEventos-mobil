@@ -46,6 +46,11 @@ class HomeActivity : AppCompatActivity() {
         createEventButton.setOnClickListener {
             startActivity(Intent(this, CreateEventActivity::class.java))
         }
+
+        val viewEventsButton = findViewById<Button>(R.id.verEventos)
+        viewEventsButton.setOnClickListener {
+            startActivity(Intent(this, ViewEventsActivity::class.java))
+        }
     }
 
 
