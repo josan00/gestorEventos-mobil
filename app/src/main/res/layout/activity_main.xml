@@ -13,9 +13,9 @@
         android:id="@+id/imageView2"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:src="@drawable/prof1"
         android:layout_marginTop="150dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/fingerprint_dialog_fp_icon" />
 
     <!-- Contenedor secundario (campos y botones) -->
     <LinearLayout

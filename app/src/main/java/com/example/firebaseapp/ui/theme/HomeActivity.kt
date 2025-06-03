@@ -15,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
 
+
+
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
 
@@ -39,7 +41,18 @@ class HomeActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.welcomeText).text = "¡Bienvenido, ${it.email}!"
             Toast.makeText(this, "¡Bienvenido, ${it.email}!", Toast.LENGTH_LONG).show()
         }
+
+        val createEventButton = findViewById<Button>(R.id.crearEvento)
+        createEventButton.setOnClickListener {
+            startActivity(Intent(this, CreateEventActivity::class.java))
+        }
+
+        val viewEventsButton = findViewById<Button>(R.id.verEventos)
+        viewEventsButton.setOnClickListener {
+            startActivity(Intent(this, ViewEventsActivity::class.java))
+        }
     }
+
 
     private fun signOut() {
         // Cerrar sesión en Firebase
@@ -54,4 +67,5 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }
