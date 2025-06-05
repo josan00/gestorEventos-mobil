@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B9D3DB"
+    android:padding="16dp">
 
-    <!-- ListView para mostrar la lista de eventos -->
-    <ListView
-        android:id="@+id/taskListView"
+    <View
+        android:id="@+id/bannerSpace"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp"
-        android:clipToPadding="false"
-        android:scrollbars="vertical"
-        android:background="@android:color/white" />
+        android:layout_height="60dp"
+        android:visibility="invisible"/>
 
-    <!-- Prueba de barra de carga -->
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
+    <!-- Contenedor principal  -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
+        android:layout_below="@id/bannerSpace"
+        android:orientation="vertical"
+        android:layout_marginTop="86dp">
+
+        <!-- Lista de eventos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documentación técnica - 2024/07/10"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pruebas de integración - 2024/06/28"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Optimización de base de datos - 2024/07/02"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Detalles del evento -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles: Estos son los próximos eventos programados para el equipo de desarrollo."
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"/>
+
+        <!-- Botón  regresar -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:text="REGRESAR"
+            android:backgroundTint="#98b50b"
+            android:textAllCaps="true"/>
+    </LinearLayout>
 
 </RelativeLayout>
